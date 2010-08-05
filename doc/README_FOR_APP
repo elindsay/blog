@@ -1,2 +1,5 @@
-Use this README file to introduce your application and point to useful places in the API for learning more.
-Run "rake doc:app" to generate API documentation for your models, controllers, helpers, and libraries.
+Steps Taken to get this running:
+In config/environments/cucumber.rb add this:
+config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+
+Currently problems with showing flash messages, commented out of cucumber features

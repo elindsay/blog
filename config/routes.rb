@@ -27,4 +27,7 @@ ActionController::Routing::Routes.draw do |map|
   #   m.logout '/logout', :action => 'destroy'
   # end
 
+  map.root :controller => :articles, :action => :index
+  map.resources :posts, :only => [:new, :create, :index, :show]
+
 end
