@@ -1,4 +1,5 @@
 ActionController::Routing::Routes.draw do |map|
+  Clearance::Routes.draw(map)
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   map.resources :products
