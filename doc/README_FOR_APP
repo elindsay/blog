@@ -3,3 +3,5 @@ In config/environments/cucumber.rb add this:
 config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 
 Currently problems with showing flash messages, commented out of cucumber features
+- commit changes
+- rake git:pull:suspenders

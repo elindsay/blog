@@ -1,0 +1,13 @@
+<%= @article.title %> <br />
+<%= @article.body %> <br /><br />
+
+<% @article.comments.each do |c| %>
+  <%= c.body %>
+<% end %>
+
+<% form_for [@article, @comment] do |form| %>
+  <%= form.error_messages %>
+  <%= form.label :body, "Leave Comment" %>
+  <%= form.text_area :body %>
+  <%= form.submit "Comment"%>
+<% end %>

@@ -10,6 +10,13 @@ module NavigationHelpers
       sign_in_path
     when /the password reset request page/i
       new_password_path
+    when /the new article page/i
+      new_article_path
+    when /the articles index page/i
+      articles_path
+    when /the "(.+)" articles page/i
+      article = Article.find_by_title($1)
+      article_path(article.id)
 
     # Add more page name => path mappings here
 

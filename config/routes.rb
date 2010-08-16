@@ -28,6 +28,8 @@ ActionController::Routing::Routes.draw do |map|
   # end
 
   map.root :controller => :articles, :action => :index
-  map.resources :posts, :only => [:new, :create, :index, :show]
+  map.resources :articles, :only => [:new, :create, :index, :show, :edit] do |articles|
+    articles.resources :comments, :only => [:new, :create]
+  end
 
 end
