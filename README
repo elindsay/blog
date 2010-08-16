@@ -1,0 +1,5 @@
+This is a demo blog I made for training
+
+The styling is ugly, but it demonstrates cucumber, rspec testing and a base project.  
+
+It used Thoughtbot Suspenders to create the project, but I took out the authentication out
